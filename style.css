@@ -1,0 +1,155 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont,"Segoe UI",SF UI Text, Roboto,"Helvetica Neue",Helvetica,sans-serif;
+	background-color: #f3f3f3;
+}
+
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+/*========== LEFT ==========*/
+
+.left {
+	width: 480px;
+	height: 600px;
+	position: absolute;
+	top: 50%;
+	margin-top: -300px;
+	box-sizing: border-box;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.logo {
+	width: 20vw;
+	height: 20vw;
+	max-width: 120px;
+	max-height: 120px;
+	z-index: 999 !important;
+	background-image: url(logo-color.png);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center left;
+	transform: translatey(0px);
+	animation: float 7s ease-in-out infinite;
+	
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+		
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+h1 {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 48px;
+	line-height: 52px;
+	
+	background-image: -webkit-gradient( linear, left top, right top, 
+	color-stop(0, #4986FB), 
+	color-stop(0.5, #C554ED), 
+	color-stop(0.75, #F523D6), 
+	color-stop(1, #F5A623));
+	
+    background-image: gradient( linear, left top, right top, 
+	color-stop(0, #4986FB), 
+	color-stop(0.5, #C554ED), 
+	color-stop(0.75, #F523D6), 
+	color-stop(1, #F5A623));
+  
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+
+/* MAILING LIST  */
+
+#mc_embed_signup {
+	position: relative;
+	width: 90%;
+}
+
+
+#mc_embed_signup .mc-field-group input {
+	height: 35px !important;
+	width: 100% !important;
+	box-sizing: border-box;
+	border-radius: 6px;
+	font-size: 14px;
+}
+
+#mc_embed_signup .mc-field-group label {
+	margin-bottom: 20px !important;
+	opacity: .7;
+	font-size: 14px;
+	display: block;
+}
+
+#mc_embed_signup .button {
+	margin-right: 10px !important;
+	height: 35px !important;
+	box-sizing: border-box;
+	border-radius: 0px 6px 6px 0px;
+	position: absolute !important;
+	bottom: 1px;
+	right: 0;
+
+}
+
+#mc-embedded-subscribe-form {
+	padding: 0 !important;
+}
+
+#mc_embed_signup div#mce-responses {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+	position: absolute;
+    left: 0;
+    bottom: -40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ==========RIGHT ==========*/
+
+
+.right {
+	width: 480px;
+	float: right;
+	background-image: url(devices.png);
+	background-size: auto 90%;
+	background-repeat: no-repeat;
+	background-position: center left;
+	height: 100vh;
+	
+}
+
+.device-screen {
+	height: 64vh;
+	width: 36vh;
+	margin-left: 3.7vh;
+	margin-top: 17vh;
+}
+
+
